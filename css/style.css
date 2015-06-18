@@ -973,8 +973,7 @@ figure {
 .video--embed {
   position: relative;
   padding-bottom: 56.25%;
-  height: 0;
-  /* hide video blurb */ }
+  height: 0; }
 
 .video--embed iframe,
 .video--embed object,
@@ -986,7 +985,39 @@ figure {
   height: 100%; }
 
 table {
-  border-collapse: collapse; }
+  padding: 0;
+  display: block;
+  max-width: 100%;
+  border-collapse: collapse;
+  overflow-x: scroll; }
+
+table tr {
+  border-top: 1px solid #cccccc;
+  background-color: white;
+  margin: 0;
+  padding: 0; }
+
+table tr:nth-child(2n) {
+  background-color: #f4f4f4; }
+
+table tr th {
+  font-weight: bold;
+  border: 1px solid #cccccc;
+  text-align: left;
+  margin: 0;
+  padding: 6px 13px; }
+
+table tr td {
+  border: 1px solid #cccccc;
+  text-align: left;
+  margin: 0;
+  padding: 6px 13px; }
+
+table tr th :first-child, table tr td :first-child {
+  margin-top: 0; }
+
+table tr th :last-child, table tr td :last-child {
+  margin-bottom: 0; }
 
 @media only screen and (max-width: 800px) {
   .posts .meta {
