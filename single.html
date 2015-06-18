@@ -1,0 +1,37 @@
+{% import "_macros.html" as macros %}
+{% extends 'layout.html' %}
+
+{% block content %}
+
+    <section class="content">
+        <article class="single">
+            <header>
+                <h1>{{ post.title_html|safe }}</h1>
+                <div class="meta">
+                    {{ post.published_at.strftime('%m.%d.%Y') }} |
+                    <a href="{{ post.category.url }}">{{ post.category.name }}</a>
+                </div>
+            </header>
+            <div class="body">
+                {{ post.html|safe }}
+            </div>
+        </article>
+    </section>
+
+    <section class="comments">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            var disqus_shortname = '{{ site_data.disqus_shortname }}'; // required: set this up in your site's config
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </section>
+
+{% endblock %}

@@ -1,0 +1,12 @@
+{% macro pagination(page, last_page) -%}
+    <section class="pagination">
+        <nav class="pagination">
+            {% if page > 1 %}
+                <span class="prev"><?php echo posts_next("☜(ﾟヮﾟ☜)"); ?></span>
+            {% endif %}
+            {% if page < last_page %}
+                <span class="next"><?php echo posts_prev("(☞ﾟヮﾟ)☞"); ?></span>
+            {% endif %}
+        </nav>
+    </section>
+{%- endmacro %}
