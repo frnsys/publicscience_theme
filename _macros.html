@@ -2,10 +2,10 @@
     <section class="pagination">
         <nav class="pagination">
             {% if page > 1 %}
-                <span class="prev"><?php echo posts_next("☜(ﾟヮﾟ☜)"); ?></span>
+                <span class="prev"><a href="?p={{ page - 1}}">☜(ﾟヮﾟ☜)</a></span>
             {% endif %}
             {% if page < last_page %}
-                <span class="next"><?php echo posts_prev("(☞ﾟヮﾟ)☞"); ?></span>
+                <span class="next"><a href="?p={{ page + 1}}">(☞ﾟヮﾟ)☞</a></span>
             {% endif %}
         </nav>
     </section>
