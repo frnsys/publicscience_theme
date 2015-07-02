@@ -833,6 +833,10 @@ body {
     width: 36px;
     margin: 0 1em; }
 
+.notice {
+  color: #ff2b30;
+  font-weight: bold; }
+
 section {
   max-width: 840px;
   margin: 2em auto;
