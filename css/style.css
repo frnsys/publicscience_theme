@@ -887,12 +887,15 @@ h4 {
 h1, h2, h3, h4, .meta {
   font-family: "Karla", "Helvetica Neue", "Helvetica", "Arial", "sans-serif"; }
 
-.footnotes {
-  border-top: 1px solid #8A8787;
+.footnote {
   color: #888;
   margin: 3em 0 0 0;
   padding-top: 1.5em;
   font-size: 0.7em; }
+  .footnote hr {
+    border-top: 1px solid #8A8787; }
+  .footnote ol {
+    padding: 0 0 0 1em; }
 
 .meta, .note {
   color: #8A8787;
@@ -922,8 +925,16 @@ h1, h2, h3, h4, .meta {
     font-style: italic; }
   .body ul {
     margin-left: 1.2em; }
-  .body li {
-    list-style-type: circle; }
+    .body ul li {
+      list-style-type: circle; }
+  .body ol li {
+    list-style-type: decimal; }
+  .body .footnote-ref {
+    padding: 0 0.4em;
+    background: #eee; }
+    .body .footnote-ref:hover {
+      color: #eee;
+      background: #A726CF; }
 
 .divider {
   color: #F83232;

@@ -109,8 +109,11 @@ h4
 h1, h2, h3, h4, .meta
     font-family: $title-type
 
-.footnotes
-    border-top: 1px solid $muted-color
+.footnote
+    hr
+        border-top: 1px solid $muted-color
+    ol
+        padding: 0 0 0 1em
     color: #888
     margin: 3em 0 0 0
     padding-top: 1.5em
@@ -122,6 +125,7 @@ h1, h2, h3, h4, .meta
 
 .note
     font-style: italic
+
 
 .body
     line-height: 1.6
@@ -144,8 +148,16 @@ h1, h2, h3, h4, .meta
         font-style: italic
     ul
         margin-left: 1.2em
-    li
-        list-style-type: circle
+        li
+            list-style-type: circle
+    ol li
+        list-style-type: decimal
+    .footnote-ref
+        padding: 0 0.4em
+        background: #eee
+        &:hover
+            color: #eee
+            background: #A726CF
 
 .divider
     color: $secondary-color
