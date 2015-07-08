@@ -1,0 +1,30 @@
+{% import "_macros.html" as macros %}
+{% extends 'layout.html' %}
+
+{% block content %}
+
+    <section class="content posts">
+        {% for post in posts %}
+            <article>
+                <header>
+                    <h1>
+                        <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title_html|safe }}</a>
+                    </h1>
+                    <ul class="meta">
+                        <li>{{ post.published_at.strftime('%m.%d.%Y') }}</li>
+                        <li>
+                            <a href="{{ post.category.url }}">{{ post.category.name }}</a>
+                        </li>
+                    </ul>
+                </header>
+                <div class="body">
+                    {{ post.html|safe }}
+                </div>
+                <div class="divider">~</div>
+            </article>
+        {% endfor %}
+    </section>
+
+    {{ macros.pagination(page, last_page) }}
+
+{% endblock %}
