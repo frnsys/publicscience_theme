@@ -837,6 +837,12 @@ body {
   color: #ff2b30;
   font-weight: bold; }
 
+.error {
+  text-align: center;
+  color: #FC6063;
+  margin: 2em 0;
+  font-size: 4em; }
+
 section {
   max-width: 840px;
   margin: 2em auto;
