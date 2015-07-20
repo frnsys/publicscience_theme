@@ -1,0 +1,22 @@
+{% import "_macros.html" as macros %}
+{% extends 'layout.html' %}
+
+{% block content %}
+
+    <section class="content">
+        <article class="single">
+            <header>
+                <h1>{{ page.title_html|safe }}</h1>
+                <div class="meta">
+                    {% if page.draft %}
+                    <span class="notice">DRAFT</span>
+                    {% endif %}
+                </div>
+            </header>
+            <div class="body">
+                {{ page.html|safe }}
+            </div>
+        </article>
+    </section>
+
+{% endblock %}
