@@ -1,8 +1,8 @@
 /* ==========================================
  * Config
  * ========================================== */
-@import url(http://fonts.googleapis.com/css?family=Karla:400,700);
 @import url(http://fonts.googleapis.com/css?family=Inconsolata);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,400italic);
 /*! normalize.css v2.1.2 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
@@ -813,7 +813,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
  * ========================================== */
 body {
   background: #fff;
-  color: #242424; }
+  color: #303030; }
 
 .primary-header {
   background: #37d1b1;
@@ -826,7 +826,7 @@ body {
   padding: 2em; }
 
 .logo {
-  font-family: "Karla", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
   font-weight: bold;
   text-transform: lowercase; }
   .logo img {
@@ -849,7 +849,7 @@ section {
   padding: 0 2em; }
 
 a {
-  color: #242424;
+  color: #303030;
   text-decoration: none; }
 
 article {
@@ -894,7 +894,7 @@ h3 {
   margin: 1.4em 0 0em 0; }
 
 h1, h2, h3, h4, .meta {
-  font-family: "Karla", "Helvetica Neue", "Helvetica", "Arial", "sans-serif"; }
+  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial", "sans-serif"; }
 
 .footnote {
   color: #888;
@@ -916,7 +916,7 @@ h1, h2, h3, h4, .meta {
 .body {
   line-height: 1.6;
   font-size: 1em;
-  font-family: "Karla", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
   text-overflow: ellipsis;
   overflow: hidden; }
   .body img {
