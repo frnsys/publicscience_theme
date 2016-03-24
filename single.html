@@ -1,6 +1,13 @@
 {% import "_macros.html" as macros %}
 {% extends 'layout.html' %}
 
+{% block meta %}
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="{{ post.title }}">
+    <meta property="og:description" content="{{ post.description }}">
+    <meta property="og:image" content="{{ site_data.site_url }}/{{ post.image }}">
+{% endblock %}
+
 {% block content %}
 
     <section class="content">

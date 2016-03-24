@@ -12,11 +12,13 @@
     <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
     <link rel="alternate" type="application/rss+xml" title="RSS" href="/rss">
 
-    <meta property="og:title" content="{{ site_data.site_name }}">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ site_data.current_url }}">
     <meta property="og:site_name" content="{{ site_data.site_name }}">
-    <meta property="og:description" content="{{ site_data.site_desc }}">
+    {% block meta %}
+        <meta property="og:title" content="{{ site_data.site_name }}">
+        <meta property="og:description" content="{{ site_data.site_desc }}">
+    {% endblock %}
 </head>
 
 <body>
