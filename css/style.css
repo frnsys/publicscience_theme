@@ -813,7 +813,8 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
  * ========================================== */
 body {
   background: #fff;
-  color: #303030; }
+  color: #303030;
+  font-size: 1.1em; }
 
 .primary-header {
   background: #37d1b1;
