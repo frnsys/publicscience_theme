@@ -3,6 +3,7 @@
  * ========================================== */
 @import url(http://fonts.googleapis.com/css?family=Inconsolata);
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,400italic);
+@import url(https://fonts.googleapis.com/css?family=Poppins:400,600);
 /*! normalize.css v2.1.2 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
@@ -885,7 +886,8 @@ h1 {
   text-transform: lowercase;
   font-size: 2em;
   color: #fff;
-  margin: 0; }
+  margin: 0;
+  font-family: "Poppins", "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial", "sans-serif"; }
 
 h2 {
   font-size: 2.2em; }
