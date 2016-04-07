@@ -26,18 +26,18 @@
 
 <body>
 
-    <header class="primary-header" style="background-color:{{ site_data.header_color }};">
+    <header class="primary-header">
         <div class="title">
             {{ site_data.header_code|safe }}
         </div>
+        <ul class="social-media list__horizontal__center">
+            <li><a href="https://github.com/{{ site_data.github }}"><span class="icon-github"></span></a></li>
+            <li><a href="https://twitter.com/{{ site_data.twitter }}"><span class="icon-twitter"></span></a></li>
+            {% for link in site_data.links %}
+                <li>{{ link|safe }}</li>
+            {% endfor %}
+        </ul>
     </header>
-    <ul class="social-media list__horizontal__center">
-        <li><a href="https://github.com/{{ site_data.github }}"><span class="icon-github"></span></a></li>
-        <li><a href="https://twitter.com/{{ site_data.twitter }}"><span class="icon-twitter"></span></a></li>
-        {% for link in site_data.links %}
-            <li>{{ link|safe }}</li>
-        {% endfor %}
-    </ul>
 
     {% block content %}
     {% endblock %}

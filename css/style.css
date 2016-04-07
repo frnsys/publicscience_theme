@@ -2,7 +2,7 @@
  * Config
  * ========================================== */
 @import url(http://fonts.googleapis.com/css?family=Inconsolata);
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,400italic);
+@import url(https://fonts.googleapis.com/css?family=Lato:400italic,700,700italic,400);
 /*! normalize.css v2.1.2 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
@@ -817,22 +817,26 @@ body {
   font-size: 1.1em; }
 
 .primary-header {
-  background: #37d1b1;
-  margin-bottom: 2em; }
+  max-width: 840px;
+  margin: 0 auto 6em auto;
+  padding: 2em; }
   .primary-header a {
-    color: #fff; }
+    color: #303030; }
+  .primary-header .social-media {
+    float: right;
+    margin-top: 0.25em; }
 
 .title {
-  text-align: center;
-  padding: 2em; }
+  float: left; }
 
 .logo {
-  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
-  font-weight: bold;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+  font-style: italic;
+  font-weight: normal;
   text-transform: lowercase; }
   .logo img {
     width: 36px;
-    margin: 0 1em; }
+    margin: 0 0.5em 0 0; }
 
 .notice {
   color: #ff2b30;
@@ -886,6 +890,8 @@ h1 {
   font-size: 2em;
   color: #fff;
   margin: 0; }
+  h1 p {
+    margin: 0; }
 
 h2 {
   font-size: 2.2em; }
@@ -898,7 +904,8 @@ h3 {
   margin: 1.4em 0 0em 0; }
 
 h1, h2, h3, h4, .meta {
-  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial", "sans-serif"; }
+  font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+  font-weight: normal; }
 
 .footnote {
   color: #888;
@@ -920,7 +927,7 @@ h1, h2, h3, h4, .meta {
 .body {
   line-height: 1.6;
   font-size: 1em;
-  font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+  font-family: "Lato", "serif";
   text-overflow: ellipsis;
   overflow: hidden; }
   .body img {
@@ -977,16 +984,18 @@ hr {
 footer {
   padding: 4em 2em; }
 
-.social-media a {
-  color: gray; }
-  .social-media a:hover {
-    color: #333333; }
-.social-media li {
-  font-size: 0.7em;
-  vertical-align: middle;
-  margin: 0 0.3em; }
-.social-media span {
-  font-size: 1.4em; }
+.social-media {
+  font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif"; }
+  .social-media a {
+    color: gray; }
+    .social-media a:hover {
+      color: #333333; }
+  .social-media li {
+    font-size: 0.7em;
+    vertical-align: middle;
+    margin: 0 0.3em; }
+  .social-media span {
+    font-size: 1.4em; }
 
 blockquote {
   margin: 2em 0;
@@ -1047,7 +1056,7 @@ table tr th :first-child, table tr td :first-child {
 table tr th :last-child, table tr td :last-child {
   margin-bottom: 0; }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 960px) {
   .posts .meta {
     text-align: left;
     position: static;

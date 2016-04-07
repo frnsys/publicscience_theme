@@ -1,18 +1,19 @@
 /* ==========================================
      Config
      ========================================== */
+$max-width: 840px
 $primary-color: #37d1b1
 $title-color: #111
 $secondary-color: #F83232
 $type-color: #303030
 $background-color: #fff
 $muted-color: #8A8787
-$primary-type: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial", "sans-serif"
-$title-type: "Source Sans Pro", "Helvetica Neue", "Helvetica", "Arial", "sans-serif"
+$primary-type: "Lato", "serif"
+$title-type: "Helvetica Neue", "Helvetica", "Arial", "sans-serif"
 $selection-background: #37d1b1
 
 @import url(http://fonts.googleapis.com/css?family=Inconsolata)
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,400italic)
+@import url(https://fonts.googleapis.com/css?family=Lato:400italic,700,700italic,400)
 
 @import "core/core"
 
@@ -39,22 +40,26 @@ body
     font-size: 1.1em
 
 .primary-header
-    background: $primary-color
-    margin-bottom: 2em
+    max-width: $max-width
+    margin: 0 auto 6em auto
+    padding: 2em
     a
-        color: #fff
+        color: $type-color
+    .social-media
+        float: right
+        margin-top: 0.25em
 
 .title
-    text-align: center
-    padding: 2em
+    float: left
 
 .logo
     font-family: $title-type
-    font-weight: bold
+    font-style: italic
+    font-weight: normal
     text-transform: lowercase
     img
         width: 36px
-        margin: 0 1em
+        margin: 0 0.5em 0 0
 
 .notice
     color: rgb(255, 43, 48)
@@ -67,7 +72,7 @@ body
     font-size: 4em
 
 section
-    max-width: 840px
+    max-width: $max-width
     margin: 2em auto
     padding: 0 2em
 
@@ -108,6 +113,8 @@ h1
     font-size: 2em
     color: #fff
     margin: 0
+    p
+        margin: 0
 
 h2
     font-size: 2.2em
@@ -121,6 +128,7 @@ h3
 
 h1, h2, h3, h4, .meta
     font-family: $title-type
+    font-weight: normal
 
 .footnote
     hr
@@ -199,6 +207,7 @@ footer
     padding: 4em 2em
 
 .social-media
+    font-family: $title-type
     a
         color: darken($background-color, 50%)
         &:hover
@@ -273,7 +282,7 @@ table tr th :last-child, table tr td :last-child
 
 
 
-@media only screen and (max-width: 800px)
+@media only screen and (max-width: 960px)
     .posts .meta
         text-align: left
         position: static
