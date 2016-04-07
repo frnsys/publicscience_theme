@@ -816,15 +816,18 @@ body {
   color: #303030;
   font-size: 1.1em; }
 
-.primary-header {
+.primary-header, footer {
   max-width: 840px;
   margin: 0 auto 6em auto;
   padding: 2em; }
-  .primary-header a {
+  .primary-header a, footer a {
     color: #303030; }
-  .primary-header .social-media {
+  .primary-header .social-media, footer .social-media {
     float: right;
     margin-top: 0.25em; }
+
+footer {
+  padding: 4em 2em; }
 
 .title {
   float: left; }
@@ -980,9 +983,6 @@ hr {
 
 .next {
   float: right; }
-
-footer {
-  padding: 4em 2em; }
 
 .social-media {
   font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif"; }

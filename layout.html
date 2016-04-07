@@ -43,6 +43,9 @@
     {% endblock %}
 
     <footer>
+        <div class="title">
+            {{ site_data.header_code|safe }}
+        </div>
         <ul class="social-media list__horizontal__center">
             <li><a href="https://github.com/{{ site_data.github }}"><span class="icon-github"></span></a></li>
             <li><a href="https://twitter.com/{{ site_data.twitter }}"><span class="icon-twitter"></span></a></li>
