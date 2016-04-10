@@ -372,11 +372,11 @@ textarea {
  */
 ::-moz-selection {
   color: #303030;
-  background: #fffba4;
+  background: #d9e8fe;
   text-shadow: none; }
 
 ::selection {
-  background: #fffba4;
+  background: #d9e8fe;
   text-shadow: none; }
 
 /*
