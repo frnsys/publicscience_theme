@@ -371,11 +371,12 @@ textarea {
  * Customize the background color to match your design.
  */
 ::-moz-selection {
-  background: #37d1b1;
+  color: #303030;
+  background: #fffba4;
   text-shadow: none; }
 
 ::selection {
-  background: #37d1b1;
+  background: #fffba4;
   text-shadow: none; }
 
 /*
