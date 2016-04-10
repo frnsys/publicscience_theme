@@ -702,112 +702,57 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
  * Modules
  * ========================================== */
 /*
-
-github.com style (c) Vasily Polovnyov <vast@whiteants.net>
-
+  Five-color theme from a single blue hue.
 */
 .hljs {
   display: block;
-  padding: 0.5em;
-  color: #333;
-  background: #f8f8f8; }
+  overflow-x: auto;
+  padding: 1em 1.5em;
+  background: #fafafa; }
 
-.hljs-comment,
-.hljs-template_comment,
-.diff .hljs-header,
-.hljs-javadoc {
-  color: #998;
-  font-style: italic; }
+.hljs {
+  color: #00193a; }
 
 .hljs-keyword,
-.css .rule .hljs-keyword,
-.hljs-winutils,
-.javascript .hljs-title,
-.nginx .hljs-title,
-.hljs-subst,
-.hljs-request,
-.hljs-status {
-  color: #333;
+.hljs-selector-tag,
+.hljs-title,
+.hljs-section,
+.hljs-doctag,
+.hljs-name,
+.hljs-strong {
   font-weight: bold; }
 
-.hljs-number,
-.hljs-hexcolor,
-.ruby .hljs-constant {
-  color: #099; }
+.hljs-comment {
+  color: #738191; }
 
 .hljs-string,
-.hljs-tag .hljs-value,
-.hljs-phpdoc,
-.tex .hljs-formula {
-  color: #d14; }
-
 .hljs-title,
-.hljs-id,
-.coffeescript .hljs-params,
-.scss .hljs-preprocessor {
-  color: #900;
-  font-weight: bold; }
-
-.javascript .hljs-title,
-.lisp .hljs-title,
-.clojure .hljs-title,
-.hljs-subst {
-  font-weight: normal; }
-
-.hljs-class .hljs-title,
-.haskell .hljs-type,
-.vhdl .hljs-literal,
-.tex .hljs-command {
-  color: #458;
-  font-weight: bold; }
-
-.hljs-tag,
-.hljs-tag .hljs-title,
-.hljs-rules .hljs-property,
-.django .hljs-tag .hljs-keyword {
-  color: #000080;
-  font-weight: normal; }
-
-.hljs-attribute,
-.hljs-variable,
-.lisp .hljs-body {
-  color: #008080; }
-
-.hljs-regexp {
-  color: #009926; }
-
-.hljs-symbol,
-.ruby .hljs-symbol .hljs-string,
-.lisp .hljs-keyword,
-.tex .hljs-special,
-.hljs-prompt {
-  color: #990073; }
-
+.hljs-section,
 .hljs-built_in,
-.lisp .hljs-title,
-.clojure .hljs-built_in {
-  color: #0086b3; }
+.hljs-literal,
+.hljs-type,
+.hljs-addition,
+.hljs-tag,
+.hljs-quote,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class {
+  color: #0048ab; }
 
-.hljs-preprocessor,
-.hljs-pragma,
-.hljs-pi,
-.hljs-doctype,
-.hljs-shebang,
-.hljs-cdata {
-  color: #999;
-  font-weight: bold; }
+.hljs-meta,
+.hljs-subst,
+.hljs-symbol,
+.hljs-regexp,
+.hljs-attribute,
+.hljs-deletion,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-link,
+.hljs-bullet {
+  color: #4c81c9; }
 
-.hljs-deletion {
-  background: #fdd; }
-
-.hljs-addition {
-  background: #dfd; }
-
-.diff .hljs-change {
-  background: #0086b3; }
-
-.hljs-chunk {
-  color: #aaa; }
+.hljs-emphasis {
+  font-style: italic; }
 
 /* ==========================================
  * Your Styles
@@ -977,7 +922,7 @@ hr {
   .pagination a {
     color: #8A8787; }
     .pagination a:hover {
-      color: #37d1b1; }
+      color: #37abd1; }
 
 .prev {
   float: left; }
@@ -1002,7 +947,7 @@ blockquote {
   margin: 2em 0;
   color: #888;
   font-size: 0.9em;
-  border-left: 4px solid #37d1b1;
+  border-left: 4px solid #37abd1;
   padding: 0 0 0 2em; }
 
 figure {
