@@ -821,7 +821,7 @@ body {
   margin: 0 auto 6em auto;
   padding: 2em; }
   .primary-header a, footer a {
-    color: #303030; }
+    color: #bbb; }
   .primary-header .social-media, footer .social-media {
     float: right;
     margin-top: 0.25em; }
@@ -929,7 +929,7 @@ h1, h2, h3, h4, .meta {
 
 .body {
   line-height: 1.6;
-  font-size: 1em;
+  font-size: 1.1em;
   font-family: "Lato", "serif";
   text-overflow: ellipsis;
   overflow: hidden; }
