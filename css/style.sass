@@ -1,49 +1,32 @@
-/* ==========================================
-     Config
-     ========================================== */
 $max-width: 840px
-$primary-color: #37abd1
 $title-color: #111
-$secondary-color: #F83232
 $type-color: #303030
-$background-color: #fff
+$background-color: #f0f0f0
 $muted-color: #8A8787
 $primary-type: "Lato", "serif"
-$title-type: "Helvetica Neue", "Helvetica", "Arial", "sans-serif"
+$title-type: "Work Sans", "Helvetica Neue", "Helvetica", "Arial", "sans-serif"
 $selection-foreground: $type-color
-$selection-background: #d9e8fe
+$selection-background: #cee1fc
 
-@import url(http://fonts.googleapis.com/css?family=Inconsolata)
+@import url(https://fonts.googleapis.com/css?family=Cousine)
 @import url(https://fonts.googleapis.com/css?family=Lato:400italic,700,700italic,400)
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:400,700)
 
 @import "core/core"
-
-/* ==========================================
-     Extensions
-     ========================================== */
 @import "exts/icons"
+@import "exts/syntax"
 
-
-/* ==========================================
-     Modules
-     ========================================== */
-
-@import "modules/syntax"
-
-
-/* ==========================================
-     Your Styles
-     ========================================== */
 
 body
     background: $background-color
     color: $type-color
-    font-size: 1.1em
+    font-size: 1em
 
 .primary-header, footer
     max-width: $max-width
     margin: 0 auto 6em auto
     padding: 2em
+    overflow: hidden
     a
         color: #bbb
     .social-media
@@ -55,15 +38,20 @@ footer
 
 .title
     float: left
+    &:hover
+        a
+            color: #444
+        img
+            opacity: 0.8
 
 .logo
     font-family: $title-type
-    font-style: italic
-    font-weight: normal
-    text-transform: lowercase
+    font-weight: bold
+    font-size: 2em
     img
         width: 36px
         margin: 0 0.5em 0 0
+        opacity: 0.2
 
 .notice
     color: rgb(255, 43, 48)
@@ -76,25 +64,33 @@ footer
     font-size: 4em
 
 section
-    max-width: $max-width
     margin: 2em auto
-    padding: 0 2em
 
 a
     color: $type-color
     text-decoration: none
 
+article, .pagination
+    max-width: $max-width
+
 article
     position: relative
-    margin: 4em 0
+    margin: 4em auto
+    padding: 0 2em
     h1, a
         color: $title-color
+    h1
+        font-size: 3em
+        margin: 0 0 1em 0
 
 pre
     font-size: 0.75em
 code
-    background: #eee
-    font-family: 'Inconsolata', 'monospace'
+    font-family: 'Cousine', 'monospace'
+    color: #111
+p code
+    color: #f94848
+    font-size: 0.9em
 pre code
     background: none
 
@@ -113,15 +109,14 @@ pre code
         top: 1em
 
 h1
-    text-transform: lowercase
-    font-size: 2em
+    font-size: 2.4em
     color: #fff
     margin: 0
     p
         margin: 0
 
 h2
-    font-size: 2.2em
+    font-size: 1.8em
 
 h4
     margin: 2em 0 0 0
@@ -144,12 +139,10 @@ h1, h2, h3, h4, .meta
     padding-top: 1.5em
     font-size: 0.7em
 
-.meta, .note
-    color: $muted-color
-    font-size: 0.6em
 
-.note
-    font-style: italic
+.meta
+    color: $muted-color
+    font-size: 0.9em
 
 
 .body
@@ -161,14 +154,16 @@ h1, h2, h3, h4, .meta
     img
         margin: 3em auto
         display: block
+        box-shadow: 2px 2px 4px rgba(0,0,0,0.3)
     a
-        color: #6667F3
+        color: #4169f6
+        background: #ede9e9
         &:hover
-            background: #eee
+            background: #fbd5d5
     figcaption
         margin: -3em 0 3em 0
         color: $muted-color
-        font-size: 0.8em
+        font-size: 0.9em
         text-align: center
         font-style: italic
     ul
@@ -184,14 +179,17 @@ h1, h2, h3, h4, .meta
             color: #eee
             background: #A726CF
 
-.divider
-    color: $secondary-color
-    text-align: center
-    margin: 4em 0 0 0
+hr.divider
+    background: #4518fc
+    margin: 8em 0 10em 0
+    border: 3px solid black
+    border-right: 0
+    border-left: 0
+    height: 1em
 
 hr
     margin: 2em 0
-    border-top: 1px dotted #eaeaea
+    border-top: 1px dotted #939393
 
 .comments
     margin-top: 6em
@@ -201,7 +199,7 @@ hr
     a
         color: $muted-color
         &:hover
-            color: $primary-color
+            color: #4518fc
 .prev
     float: left
 .next
@@ -224,7 +222,7 @@ blockquote
     margin: 2em 0
     color: #888
     font-size: 0.9em
-    border-left: 4px solid $primary-color
+    border-left: 12px solid #a3f6be
     padding: 0 0 0 2em
 
 figure
@@ -282,13 +280,11 @@ table tr th :last-child, table tr td :last-child
     margin-bottom: 0
 
 
-
 @media only screen and (max-width: 960px)
     .posts .meta
         text-align: left
         position: static
-        margin-left: 0
-        margin: 0em 0 2em 0
+        margin: -3em 0 2em 0
         li
             display: inline-block
             margin-right: 0.5em

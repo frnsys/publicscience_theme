@@ -1,8 +1,6 @@
-/* ==========================================
- * Config
- * ========================================== */
-@import url(http://fonts.googleapis.com/css?family=Inconsolata);
+@import url(https://fonts.googleapis.com/css?family=Cousine);
 @import url(https://fonts.googleapis.com/css?family=Lato:400italic,700,700italic,400);
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:400,700);
 /*! normalize.css v2.1.2 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
@@ -372,11 +370,11 @@ textarea {
  */
 ::-moz-selection {
   color: #303030;
-  background: #d9e8fe;
+  background: #cee1fc;
   text-shadow: none; }
 
 ::selection {
-  background: #d9e8fe;
+  background: #cee1fc;
   text-shadow: none; }
 
 /*
@@ -641,9 +639,6 @@ img {
   max-width: 100%;
   vertical-align: middle; }
 
-/* ==========================================
- * Extensions
- * ========================================== */
 @font-face {
   font-family: "icons";
   src: url("fonts/icons.eot?#iefix") format("embedded-opentype"), url("fonts/icons.woff") format("woff"), url("fonts/icons.ttf") format("truetype"), url("fonts/icons.svg#icons") format("svg");
@@ -698,9 +693,6 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
 .icon-twitter:before {
   content: "\f102"; }
 
-/* ==========================================
- * Modules
- * ========================================== */
 /*
   Five-color theme from a single blue hue.
 */
@@ -708,7 +700,8 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
   display: block;
   overflow-x: auto;
   padding: 1em 1.5em;
-  background: #fafafa; }
+  background: #e6e6e6;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); }
 
 .hljs {
   color: #00193a; }
@@ -754,18 +747,16 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
 .hljs-emphasis {
   font-style: italic; }
 
-/* ==========================================
- * Your Styles
- * ========================================== */
 body {
-  background: #fff;
+  background: #f0f0f0;
   color: #303030;
-  font-size: 1.1em; }
+  font-size: 1em; }
 
 .primary-header, footer {
   max-width: 840px;
   margin: 0 auto 6em auto;
-  padding: 2em; }
+  padding: 2em;
+  overflow: hidden; }
   .primary-header a, footer a {
     color: #bbb; }
   .primary-header .social-media, footer .social-media {
@@ -777,15 +768,19 @@ footer {
 
 .title {
   float: left; }
+  .title:hover a {
+    color: #444; }
+  .title:hover img {
+    opacity: 0.8; }
 
 .logo {
-  font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
-  font-style: italic;
-  font-weight: normal;
-  text-transform: lowercase; }
+  font-family: "Work Sans", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+  font-weight: bold;
+  font-size: 2em; }
   .logo img {
     width: 36px;
-    margin: 0 0.5em 0 0; }
+    margin: 0 0.5em 0 0;
+    opacity: 0.2; }
 
 .notice {
   color: #ff2b30;
@@ -798,26 +793,35 @@ footer {
   font-size: 4em; }
 
 section {
-  max-width: 840px;
-  margin: 2em auto;
-  padding: 0 2em; }
+  margin: 2em auto; }
 
 a {
   color: #303030;
   text-decoration: none; }
 
+article, .pagination {
+  max-width: 840px; }
+
 article {
   position: relative;
-  margin: 4em 0; }
+  margin: 4em auto;
+  padding: 0 2em; }
   article h1, article a {
     color: #111; }
+  article h1 {
+    font-size: 3em;
+    margin: 0 0 1em 0; }
 
 pre {
   font-size: 0.75em; }
 
 code {
-  background: #eee;
-  font-family: "Inconsolata", "monospace"; }
+  font-family: "Cousine", "monospace";
+  color: #111; }
+
+p code {
+  color: #f94848;
+  font-size: 0.9em; }
 
 pre code {
   background: none; }
@@ -835,15 +839,14 @@ pre code {
   top: 1em; }
 
 h1 {
-  text-transform: lowercase;
-  font-size: 2em;
+  font-size: 2.4em;
   color: #fff;
   margin: 0; }
   h1 p {
     margin: 0; }
 
 h2 {
-  font-size: 2.2em; }
+  font-size: 1.8em; }
 
 h4 {
   margin: 2em 0 0 0;
@@ -853,7 +856,7 @@ h3 {
   margin: 1.4em 0 0em 0; }
 
 h1, h2, h3, h4, .meta {
-  font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+  font-family: "Work Sans", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
   font-weight: normal; }
 
 .footnote {
@@ -866,12 +869,9 @@ h1, h2, h3, h4, .meta {
   .footnote ol {
     padding: 0 0 0 1em; }
 
-.meta, .note {
+.meta {
   color: #8A8787;
-  font-size: 0.6em; }
-
-.note {
-  font-style: italic; }
+  font-size: 0.9em; }
 
 .body {
   line-height: 1.6;
@@ -881,15 +881,17 @@ h1, h2, h3, h4, .meta {
   overflow: hidden; }
   .body img {
     margin: 3em auto;
-    display: block; }
+    display: block;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); }
   .body a {
-    color: #6667F3; }
+    color: #4169f6;
+    background: #ede9e9; }
     .body a:hover {
-      background: #eee; }
+      background: #fbd5d5; }
   .body figcaption {
     margin: -3em 0 3em 0;
     color: #8A8787;
-    font-size: 0.8em;
+    font-size: 0.9em;
     text-align: center;
     font-style: italic; }
   .body ul {
@@ -905,14 +907,17 @@ h1, h2, h3, h4, .meta {
       color: #eee;
       background: #A726CF; }
 
-.divider {
-  color: #F83232;
-  text-align: center;
-  margin: 4em 0 0 0; }
+hr.divider {
+  background: #4518fc;
+  margin: 8em 0 10em 0;
+  border: 3px solid black;
+  border-right: 0;
+  border-left: 0;
+  height: 1em; }
 
 hr {
   margin: 2em 0;
-  border-top: 1px dotted #eaeaea; }
+  border-top: 1px dotted #939393; }
 
 .comments {
   margin-top: 6em; }
@@ -922,7 +927,7 @@ hr {
   .pagination a {
     color: #8A8787; }
     .pagination a:hover {
-      color: #37abd1; }
+      color: #4518fc; }
 
 .prev {
   float: left; }
@@ -931,11 +936,11 @@ hr {
   float: right; }
 
 .social-media {
-  font-family: "Helvetica Neue", "Helvetica", "Arial", "sans-serif"; }
+  font-family: "Work Sans", "Helvetica Neue", "Helvetica", "Arial", "sans-serif"; }
   .social-media a {
-    color: gray; }
+    color: #717171; }
     .social-media a:hover {
-      color: #333333; }
+      color: #242424; }
   .social-media li {
     font-size: 0.7em;
     vertical-align: middle;
@@ -947,7 +952,7 @@ blockquote {
   margin: 2em 0;
   color: #888;
   font-size: 0.9em;
-  border-left: 4px solid #37abd1;
+  border-left: 12px solid #a3f6be;
   padding: 0 0 0 2em; }
 
 figure {
@@ -1006,8 +1011,7 @@ table tr th :last-child, table tr td :last-child {
   .posts .meta {
     text-align: left;
     position: static;
-    margin-left: 0;
-    margin: 0em 0 2em 0; }
+    margin: -3em 0 2em 0; }
     .posts .meta li {
       display: inline-block;
       margin-right: 0.5em; } }
