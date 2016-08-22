@@ -868,9 +868,14 @@ hr {
 .pagination {
   overflow: hidden; }
   .pagination a {
-    color: #8A8787; }
+    color: #4518fc;
+    border: 2px solid #4518fc;
+    border-radius: 0.4em;
+    display: block;
+    padding: 0.2em 0.5em; }
     .pagination a:hover {
-      color: #4518fc; }
+      color: #fff;
+      background: #4518fc; }
 
 .prev {
   float: left; }
