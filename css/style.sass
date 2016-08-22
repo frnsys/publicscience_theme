@@ -23,26 +23,25 @@ body
     font-size: 1em
 
 .primary-header, footer
-    max-width: $max-width
     margin: 0 auto 6em auto
     padding: 2em
     overflow: hidden
+    background: #4518fc
     a
-        color: #bbb
+        color: #fff
     .social-media
         float: right
-        margin-top: 0.8em
+        margin-top: 0.5em
 
 footer
     padding: 4em 2em
+    margin: 0
 
 .title
     float: left
     &:hover
         a
-            color: #444
-        img
-            opacity: 0.8
+            color: #73ff92
 
 .logo
     font-family: $title-type
@@ -51,7 +50,6 @@ footer
     img
         width: 36px
         margin: 0 0.5em 0 0
-        opacity: 0.2
 
 .notice
     color: rgb(255, 43, 48)
@@ -184,10 +182,10 @@ h1, h2, h3, h4, .meta
 hr.divider
     background: #4518fc
     margin: 8em 0 10em 0
-    border: 3px solid black
+    border: 4px solid black
     border-right: 0
     border-left: 0
-    height: 1em
+    height: 1.5em
 
 hr
     margin: 2em 0
@@ -207,11 +205,10 @@ hr
 .social-media
     font-family: $title-type
     a
-        color: darken($background-color, 50%)
+        color: #fff
         &:hover
-            color: darken($background-color, 80%)
+            color: #73ff92
     li
-        font-size: 0.7em
         vertical-align: middle
         margin: 0 0.3em
     span
