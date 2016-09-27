@@ -906,7 +906,8 @@ figure {
   margin: 4em 0; }
 
 video {
-  max-width: 100%; }
+  max-width: 100%;
+  margin: 0 0 3em 0; }
 
 .video--embed {
   position: relative;
