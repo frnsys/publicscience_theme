@@ -58,19 +58,20 @@
     </footer>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/config/TeX-AMS-MML_HTMLorMML-full.js"></script>
+    <script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script src="/js/highlight.pack.js"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [["$","$"]],
+                displayMath: [['$$','$$']],
+                processEscapes: true
+            }
+        });
+    </script>
     <script>
         $(document).ready(function() {
             $('pre').each(function(i, e) {hljs.highlightBlock(e)});
-            MathJax.Hub.Config({
-                tex2jax: {
-                    inlineMath: [["$","$"]],
-                    displayMath: [['$$','$$']],
-                    processEscapes: true
-                }
-            });
-            MathJax.Hub.Startup.onload();
         });
     </script>
 </body>
