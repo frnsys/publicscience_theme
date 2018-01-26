@@ -510,8 +510,10 @@ textarea {
    ========================================================================== */
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */ }
+
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
   /* Style adjustments for high resolution devices */ }
+
 /* ==========================================================================
    Print styles.
    Inlined to avoid required HTTP connection: h5bp.com/r
@@ -523,41 +525,32 @@ textarea {
     /* Black prints faster: h5bp.com/s */
     box-shadow: none !important;
     text-shadow: none !important; }
-
   a,
   a:visited {
     text-decoration: underline; }
-
   a[href]:after {
     content: " (" attr(href) ")"; }
-
   abbr[title]:after {
     content: " (" attr(title) ")"; }
-
   /*
-   * Don't show links for images, or javascript/internal links
-   */
+     * Don't show links for images, or javascript/internal links
+     */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: ""; }
-
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid; }
-
   thead {
     display: table-header-group;
     /* h5bp.com/t */ }
-
   tr,
   img {
     page-break-inside: avoid; }
-
   img {
     max-width: 100% !important; }
-
   @page {
     margin: 0.5cm; }
   p,
@@ -565,10 +558,10 @@ textarea {
   h3 {
     orphans: 3;
     widows: 3; }
-
   h2,
   h3 {
     page-break-after: avoid; } }
+
 body {
   font-size: 1em;
   line-height: 1.4; }
@@ -613,19 +606,19 @@ ul, li {
   text-align: center; }
 
 /*  Horizontal justified lists.
- * http://goo.gl/bFGl9A
- * If you have having issues with vertical spacing,
- * set the ul's font-size to 0, and define a px font
- * for the li's.
- * Also try adjusting the li's line-height. */
+    http://goo.gl/bFGl9A
+    If you have having issues with vertical spacing,
+    set the ul's font-size to 0, and define a px font
+    for the li's.
+    Also try adjusting the li's line-height. */
 .list__horizontal__justify {
   text-align: justify; }
   .list__horizontal__justify:before {
-    content: "";
+    content: '';
     display: block;
     width: 100%; }
   .list__horizontal__justify:after {
-    content: "";
+    content: '';
     display: inline-block;
     width: 100%; }
   .list__horizontal__justify > li {
@@ -760,7 +753,7 @@ pre {
   font-size: 0.75em; }
 
 code {
-  font-family: "Cousine", "monospace";
+  font-family: 'Cousine', 'monospace';
   color: #111; }
 
 p code {
@@ -772,8 +765,10 @@ pre code {
 
 .single h1, .single .meta {
   text-align: center; }
+
 .single h1 {
   margin: 0 0 0.3em 0; }
+
 .single header {
   padding: 2em 0 4em 0; }
 
@@ -831,7 +826,12 @@ h1, h2, h3, h4, .meta {
   .body img {
     margin: 3em auto;
     display: block;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); }
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    max-height: 400px; }
+  .body svg {
+    margin: 3em auto;
+    display: block;
+    max-height: 400px; }
   .body a {
     color: #4169f6;
     background: #ede9e9; }
@@ -972,5 +972,3 @@ table tr th :last-child, table tr td :last-child {
     .posts .meta li {
       display: inline-block;
       margin-right: 0.5em; } }
-
-/*# sourceMappingURL=style.css.map */
