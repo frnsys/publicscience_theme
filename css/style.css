@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Cousine);
 @import url(https://fonts.googleapis.com/css?family=Lato:400italic,700,700italic,400);
-@import url(https://fonts.googleapis.com/css?family=Work+Sans:400,700);
+@import url(https://fonts.googleapis.com/css?family=Muli:400,700);
 /*! normalize.css v2.1.2 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
@@ -712,7 +712,7 @@ footer {
     color: #73ff92; }
 
 .logo {
-  font-family: "Work Sans", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+  font-family: "Muli", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
   font-weight: bold;
   font-size: 2em; }
   .logo img {
@@ -800,7 +800,7 @@ h3 {
   margin: 1.4em 0 0em 0; }
 
 h1, h2, h3, h4, .meta {
-  font-family: "Work Sans", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+  font-family: "Muli", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
   font-weight: normal; }
 
 .footnote {
@@ -889,7 +889,7 @@ hr {
   float: right; }
 
 .social-media {
-  font-family: "Work Sans", "Helvetica Neue", "Helvetica", "Arial", "sans-serif"; }
+  font-family: "Muli", "Helvetica Neue", "Helvetica", "Arial", "sans-serif"; }
   .social-media a {
     color: #fff; }
     .social-media a:hover {
