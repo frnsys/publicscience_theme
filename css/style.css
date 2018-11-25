@@ -827,16 +827,17 @@ h1, h2, h3, h4, .meta {
     margin: 3em auto;
     display: block;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-    max-height: 400px; }
+    max-height: 400px;
+    border: 1px solid #ccc; }
   .body svg {
     margin: 3em auto;
     display: block;
     max-height: 400px; }
   .body a {
-    color: #4169f6;
-    background: #ede9e9; }
+    color: #0034ed; }
     .body a:hover {
-      background: #fbd5d5; }
+      background: #0034ed;
+      color: #fff; }
     .body a code {
       color: #4169f6; }
   .body figcaption {
@@ -861,9 +862,7 @@ h1, h2, h3, h4, .meta {
 hr.divider {
   background: #4518fc;
   margin: 8em 0 10em 0;
-  border: 4px solid black;
-  border-right: 0;
-  border-left: 0;
+  border: none;
   height: 1.5em; }
 
 hr {
