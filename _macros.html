@@ -1,12 +1,14 @@
 {% macro pagination(page) -%}
     <section class="pagination">
-        <nav class="pagination">
+        <span class="prev">
             {% if page.prev %}
-                <span class="prev"><a href="{{page.prev}}">☜(ﾟヮﾟ☜)</a></span>
+                <a href="{{page.prev}}">&lt;~</a>
             {% endif %}
+        </span>
+        <span class="next">
             {% if page.next %}
-                <span class="next"><a href="{{page.next}}">(☞ﾟヮﾟ)☞</a></span>
+                <a href="{{page.next}}">~&gt;</a>
             {% endif %}
-        </nav>
+        </span>
     </section>
 {%- endmacro %}

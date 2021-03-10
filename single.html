@@ -20,9 +20,11 @@
                 <h1>{{ post.title_html|safe }}</h1>
                 <div class="meta">
                     {% if post.draft %}
-                    <span class="notice">DRAFT</span> |
+                        <span class="notice">DRAFT</span> ·
                     {% endif %}
-                    {{ post.published_at.strftime('%m.%d.%Y') }} |
+
+                    <img class="avatar" src="/assets/avatar.png" /> ·
+                    {{ post.published_at.strftime('%m.%d.%Y') }} ·
                     <a href="{{ post.category.url }}">{{ post.category.name }}</a>
                 </div>
             </header>
