@@ -2,6 +2,10 @@
 {% extends 'layout.html' %}
 
 {% block meta %}
+    <title>{{ site_data.site_name }} - {{ post.title }}</title>
+    <meta property="og:url" content="{{ site_data.current_url }}">
+    <meta property="og:site_name" content="{{ site_data.site_name }}">
+    <meta property="description" content="{{ post.description }}">
     <meta property="og:type" content="article">
     <meta property="og:title" content="{{ post.title }}">
     <meta property="og:description" content="{{ post.description }}">
