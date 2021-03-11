@@ -1,3 +1,41 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color: #eee;
+    --background: #181818;
+    /* --accent-color: #ffdf62; */
+    --accent-color: #6291ff;
+    --notice-color: #d2171c;
+    --media-border-color: #333;
+    --avatar-border-color: #6291ff;
+    --hr-color: #333;
+    --fn-color: #aaa;
+    --button-color: #111;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --color: #111;
+    --background: #f0f0f0;
+    --accent-color: #005AFF;
+    --notice-color: #ff2b30;
+    --media-border-color: #ccc;
+    --avatar-border-color: #000;
+    --hr-color: #888;
+    --fn-color: #555;
+    --button-color: #fff;
+  }
+}
+
+:root {
+  --table-color: #111;
+  --table-border-color: #ccc;
+  --table-header-color: #dcdcdc;
+  --table-odd-color: #e8e8e8;
+  --table-even-color: #f4f4f4;
+}
+
+
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
@@ -22,8 +60,8 @@
 }
 
 body {
-  color: #111;
-  background: #f0f0f0;
+  color: var(--color);
+  background: var(--background);;
   font-size: 14px;
   font-family: 'Open Sans', sans-serif;
 }
@@ -34,7 +72,7 @@ main {
 }
 
 a {
-  color: blue;
+  color: var(--accent-color);
 }
 
 .banner {
@@ -43,19 +81,20 @@ a {
   font-size: 0.8em;
 }
 .banner a {
-  color: #111;
+  color: var(--color);
+  text-decoration: none;
 }
 .banner a:hover {
-  color: blue;
+  color: var(--accent-color);
 }
 
 .notice {
-  color: rgb(255, 43, 48);
   font-weight: bold;
+  color: var(--notice-color);
 }
 .error {
   text-align: center;
-  color: #FC6063;
+  color: var(--notice-color);
   margin: 2em 0;
   font-size: 4em;
 }
@@ -64,7 +103,7 @@ article {
   position: relative;
 }
 article header h1 a {
-  color: #111;
+  color: var(--color);
   font-size: 1.5em;
   text-decoration: none;
 }
@@ -72,7 +111,6 @@ article header h1 a {
 .body {
   line-height: 1.6;
   font-size: 1.05em;
-  font-family: $primary-type;
   text-overflow: ellipsis;
 }
 .body img, .body svg, .body video, .body audio {
@@ -80,7 +118,7 @@ article header h1 a {
   max-height: 80vh;
   margin: 3em auto;
   display: block;
-  border: 1px solid #ccc;
+  border: 1px solid var(--media-border-color);
 }
 .body figcaption {
   margin: -3em 0 3em 0;
@@ -115,9 +153,14 @@ article header h1 a {
 
 h2 {
   font-size: 1.3em;
+  margin: 2.5em 0 0 0;
 }
 h3 {
   font-size: 1.1em;
+  margin: 2em 0 0 0;
+}
+h2 + h3 {
+  margin-top: 1em;
 }
 ul {
   list-style-type: circle;
@@ -125,14 +168,19 @@ ul {
 blockquote {
   margin: 2em 0;
   font-size: 0.9em;
-  border-left: 3px solid black;
+  border-left: 3px solid var(--color);
   padding: 0 0 0 2em;
 }
 hr {
   border: none;
-  background: #888;
+  background: var(--hr-color);
   height: 1px;
   margin: 2em 0;
+}
+
+figure {
+  margin-right: 0;
+  margin-left: 0;
 }
 
 table {
@@ -141,32 +189,33 @@ table {
   max-width: 100%;
   border-collapse: collapse;
   overflow-x: scroll;
+  color: var(--table-color);
 }
 
 table tr {
-  border-top: 1px solid #cccccc;
-  background-color: #e8e8e8;
+  border: 1px solid var(--table-border-color);
+  background-color: var(--table-odd-color);
   margin: 0;
   padding: 0;
 }
 table thead tr {
-  background-color: #dcdcdc;
+  background-color: var(--table-header-color);
 }
 
 table tr:nth-child(2n) {
-  background-color: #f4f4f4;
+  background-color: var(--table-even-color);
 }
 
 table tr th {
   font-weight: bold;
-  border: 1px solid #cccccc;
+  border: 1px solid var(--table-border-color);
   text-align: left;
   margin: 0;
   padding: 6px 13px;
 }
 
 table tr td {
-  border: 1px solid #cccccc;
+  border: 1px solid var(--table-border-color);
   text-align: left;
   margin: 0;
   padding: 6px 13px;
@@ -199,12 +248,14 @@ iframe {
 }
 
 .footnote-ref {
-  color: #777;
+  color: var(--fn-color);
   text-decoration: none;
+  margin-right: 2px;
+  font-size: 0.8em;
 }
 .footnote hr {
   border: none;
-  background: #888;
+  background: var(--hr-color);
   height: 1px;
   margin: 2em 0;
 }
@@ -212,11 +263,11 @@ iframe {
   padding: 0 0 0 1em;
   margin: 0;
   font-size: 0.7em;
-  color: #484848;
+  color: var(--fn-color);
 }
 
 .divider {
-  background: #4518fc;
+  background: var(--accent-color);
   margin: 8em 0;
   border: none;
   height: 1px;
@@ -225,12 +276,12 @@ iframe {
 .pagination {
   display: flex;
   justify-content: space-between;
-  border-top: 1px solid #4518fc;
+  border-top: 1px solid var(--accent-color);
   padding-top: 2em;
 }
 .pagination a {
-  background: #4518fc;
-  color: #fff;
+  background: var(--accent-color);
+  color: var(--button-color);
   border-radius: 0.2em;
   display: inline-block;
   padding: 0.2em 0.5em;
@@ -243,14 +294,11 @@ iframe {
 .pagination .next {
   text-align: right;
 }
-.pagination a:hover {
-  background: #370aee;
-}
 
 .avatar {
   width: 48px;
   border-radius: 0.2em;
-  border: 1px solid black;
+  border: 1px solid var(--avatar-border-color);
 }
 
 @media only screen and (max-width: 720px) {
@@ -266,8 +314,9 @@ iframe {
   .posts .meta > div {
     display: inline-block;
     vertical-align: middle;
-    border-right: 1px dotted #555;
+    border-right: 1px dotted var(--hr-color);
     margin-right: 0.2em;
     padding-right: 0.5em;
   }
 }
+
