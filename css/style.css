@@ -191,6 +191,9 @@ h2 + h3 {
 ul {
   list-style-type: circle;
 }
+code {
+  color: var(--code-keyword);
+}
 blockquote {
   margin: 2em 0;
   font-size: 0.9em;
