@@ -89,8 +89,12 @@ a {
 }
 
 .notice {
+  color: #fff;
   font-weight: bold;
-  color: var(--notice-color);
+  background: var(--notice-color);
+  padding: 0 0.1em;
+  border-radius: 0.2em;
+  font-size: 0.8em;
 }
 .error {
   text-align: center;
