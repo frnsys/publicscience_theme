@@ -5,11 +5,18 @@
     /* --accent-color: #ffdf62; */
     --accent-color: #6291ff;
     --notice-color: #d2171c;
+    --notice-border-color: #790000;
     --media-border-color: #333;
     --avatar-border-color: #6291ff;
     --hr-color: #333;
     --fn-color: #aaa;
     --button-color: #111;
+    --code-background: #111;
+    --code-color: #fff;
+    --code-comment: #738191;
+    --code-keyword: #28c55e;
+    --code-variable: #fed763;
+    --code-string: #7070e1;
   }
 }
 
@@ -19,11 +26,18 @@
     --background: #f0f0f0;
     --accent-color: #005AFF;
     --notice-color: #ff2b30;
+    --notice-border-color: #790000;
     --media-border-color: #ccc;
     --avatar-border-color: #000;
     --hr-color: #888;
     --fn-color: #555;
     --button-color: #fff;
+    --code-background: #e6e6e6;
+    --code-color: #00193a;
+    --code-comment: #738191;
+    --code-keyword: #0048ab;
+    --code-variable: #4c81c9;
+    --code-string: #4c81c9;
   }
 }
 
@@ -92,6 +106,7 @@ a {
   color: #fff;
   font-weight: bold;
   background: var(--notice-color);
+  border: 1px solid var(--notice-border-color);
   padding: 0 0.1em;
   border-radius: 0.2em;
   font-size: 0.8em;
@@ -331,3 +346,63 @@ iframe {
   }
 }
 
+
+
+/*
+  Syntax highlighting
+*/
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 1em 1.5em;
+  background: var(--code-background);
+  border: 1px solid var(--media-border-color);
+  color: var(--code-color);
+  font-size: 0.8em;
+}
+
+.hljs-comment {
+  color: var(--code-comment);
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-title,
+.hljs-section,
+.hljs-doctag,
+.hljs-name,
+.hljs-strong,
+.hljs-section,
+.hljs-built_in,
+.hljs-literal,
+.hljs-type,
+.hljs-addition,
+.hljs-tag,
+.hljs-quote,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class {
+  color: var(--code-keyword);
+}
+
+.hljs-title,
+.hljs-meta,
+.hljs-subst,
+.hljs-symbol,
+.hljs-regexp,
+.hljs-attribute,
+.hljs-deletion,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-link,
+.hljs-bullet {
+  color: var(--code-variable);
+}
+
+.hljs-string {
+  color: var(--code-string);
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
