@@ -103,6 +103,9 @@ a {
 .banner a:hover {
   color: var(--accent-color);
 }
+.links a {
+  margin-left: 0.5em;
+}
 
 .notice {
   color: #fff;
