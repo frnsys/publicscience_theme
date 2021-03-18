@@ -10,7 +10,8 @@
     --media-border-color: #333;
     --avatar-border-color: #6291ff;
     --hr-color: #333;
-    --fn-color: #aaa;
+    --fn-color: #ffbf00;
+    --fn-detail-color: #aaa;
     --button-color: #111;
     --code-background: #111;
     --code-color: #fff;
@@ -33,7 +34,8 @@
     --media-border-color: #ccc;
     --avatar-border-color: #000;
     --hr-color: #888;
-    --fn-color: #555;
+    --fn-color: #ff2400;
+    --fn-detail-color: #555;
     --button-color: #fff;
     --code-background: #e6e6e6;
     --code-color: #00193a;
@@ -298,7 +300,6 @@ iframe {
 
 .footnote-ref {
   color: var(--fn-color);
-  text-decoration: none;
   margin-right: 2px;
   font-size: 0.8em;
 }
@@ -312,7 +313,7 @@ iframe {
   padding: 0 0 0 1em;
   margin: 0;
   font-size: 0.7em;
-  color: var(--fn-color);
+  color: var(--fn-detail-color);
 }
 
 .divider {
@@ -335,6 +336,9 @@ iframe {
   display: inline-block;
   padding: 0.2em 0.5em;
   text-decoration: none;
+}
+.pagination a:hover {
+  background: var(--accent-hover-color);
 }
 .pagination span {
   display: block;
