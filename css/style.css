@@ -118,7 +118,8 @@ a:hover {
   color: var(--accent-color);
 }
 .links a {
-  margin-left: 0.5em;
+  margin: 0 0 0.5em 0.5em;
+  display: inline-block;
 }
 
 .notice {
@@ -370,6 +371,13 @@ iframe {
     border-right: 1px dotted var(--hr-color);
     margin-right: 0.2em;
     padding-right: 0.5em;
+  }
+  .posts .meta > div:last-child {
+    border-right: none;
+  }
+  .links {
+    text-align: right;
+    max-width: 50%;
   }
 }
 
