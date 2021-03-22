@@ -155,7 +155,7 @@ article header h1 a {
 .body img, .body svg, .body video, .body audio {
   max-width: 100%;
   max-height: 80vh;
-  margin: 3em auto;
+  margin: 0 auto;
   display: block;
   border: 1px solid var(--media-border-color);
 }
@@ -163,7 +163,6 @@ article header h1 a {
   background: #fff;
 }
 .body figcaption {
-  margin: -3em 0 3em 0;
   font-size: 0.9em;
   text-align: center;
   font-style: italic;
@@ -355,6 +354,19 @@ iframe {
   border: 1px solid var(--avatar-border-color);
 }
 
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 2em auto;
+}
+.gallery br, .gallery p {
+  display: none;
+}
+.gallery figure {
+  width: 49%;
+}
+
 @media only screen and (max-width: 720px) {
   .posts .meta {
     text-align: left;
@@ -378,6 +390,9 @@ iframe {
   .links {
     text-align: right;
     max-width: 50%;
+  }
+  .gallery figure {
+    width: auto;
   }
 }
 
