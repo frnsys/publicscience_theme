@@ -280,22 +280,28 @@ table tr th :last-child, table tr td :last-child {
   margin-bottom: 0;
 }
 
-.video--embed {
+figure.has-iframe {
   position: relative;
   padding-bottom: 56.25%; /* 16/9 ratio */
   height: 0;
 }
-.video--embed iframe,
-.video--embed object,
-.video--embed embed {
+figure.has-iframe.has-caption {
+  margin-bottom: 2em;
+}
+figure.has-iframe figcaption {
+  position: absolute;
+  bottom: -1.5em;
+  width: 100%;
+}
+figure iframe,
+figure object,
+figure embed {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-}
-iframe {
-  margin: 1.5em auto !important;
+  border: 1px solid var(--media-border-color);
 }
 
 .footnote-ref {
