@@ -37,4 +37,14 @@
             </div>
         </article>
     </section>
+
+    <script>
+        [...document.querySelectorAll('h2')].forEach((el) => {
+            let link = document.createElement('a');
+            link.href = `#${el.id}`;
+            link.innerText = '𝄋';
+            link.classList.add('anchor');
+            el.appendChild(link);
+        });
+    </script>
 {% endblock %}

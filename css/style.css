@@ -2,6 +2,7 @@
   :root {
     --color: #eee;
     --background: #181818;
+    --muted-color: #383838;
     /* --accent-color: #ffdf62; */
     --accent-color: #4b80fd;
     --accent-hover-color: #FFC106;
@@ -27,6 +28,7 @@
   :root {
     --color: #111;
     --background: #f0f0f0;
+    --muted-color: #bbb;
     --accent-color: #005AFF;
     --accent-hover-color: #eb1818;
     --notice-color: #ff2b30;
@@ -371,6 +373,17 @@ figure embed {
 }
 .gallery figure {
   width: 49%;
+}
+
+.anchor {
+  position: absolute;
+  left: -1em;
+  color: var(--muted-color);
+  font-size: 1.2em;
+  margin-top: -0.15em;
+}
+.anchor:hover {
+  color: var(--color);
 }
 
 @media only screen and (max-width: 720px) {
