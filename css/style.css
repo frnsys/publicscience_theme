@@ -2,6 +2,7 @@
   :root {
     --color: #eee;
     --background: #181818;
+    --em-color: #eccf98;
     --muted-color: #383838;
     /* --accent-color: #ffdf62; */
     --accent-color: #4b80fd;
@@ -28,6 +29,7 @@
   :root {
     --color: #111;
     --background: #f0f0f0;
+    --em-color: #c61010;
     --muted-color: #bbb;
     --accent-color: #005AFF;
     --accent-hover-color: #eb1818;
@@ -105,6 +107,10 @@ a {
 }
 a:hover {
   color: var(--accent-hover-color);
+}
+
+em {
+  color: var(--em-color);
 }
 
 .banner {
